@@ -1,4 +1,4 @@
-package com.example.test.service.cache;
+package com.example.springbootdemo.service.cache;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;

@@ -1,11 +1,11 @@
-package com.example.test.service.user;
+package com.example.springbootdemo.service.user;
 
-import com.example.test.model.User;
+import com.example.springbootdemo.model.TTest;
 
 /**
  * @author liuyiqian
  */
-public interface UserService {
+public interface TestService {
 
-    User findById(Integer id);
+    TTest findById(Long id);
 }

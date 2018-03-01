@@ -1,7 +1,7 @@
-package com.example.test.service.user;
+package com.example.springbootdemo.service.user;
 
-import com.example.test.dao.UserMapper;
-import com.example.test.model.User;
+import com.example.springbootdemo.dao.TestMapper;
+import com.example.springbootdemo.model.TTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,13 +9,13 @@ import org.springframework.stereotype.Service;
  * @author liuyiqian
  */
 @Service
-public class UserServiceImp implements UserService{
+public class TestServiceImp implements TestService {
 
     @Autowired
-    private UserMapper userMapper;
+    private TestMapper testMapper;
 
     @Override
-    public User findById(Integer id) {
-        return userMapper.findById(id);
+    public TTest findById(Long id) {
+        return testMapper.findById(id);
     }
 }
