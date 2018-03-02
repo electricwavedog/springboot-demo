@@ -4,9 +4,6 @@ import java.io.Serializable;
 
 /**
  * @author liuyiqian
- * @version 1.0
- * @description
- * @date 2018/3/1 下午3:01
  */
 public class TTest implements Serializable {
 

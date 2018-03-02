@@ -15,6 +15,15 @@ public class TUser implements Serializable {
 
     private String password;
 
+    public TUser() {
+    }
+
+    public TUser(Long id, String userName, String password) {
+        this.id = id;
+        this.userName = userName;
+        this.password = password;
+    }
+
     public Long getId() {
         return id;
     }

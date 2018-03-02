@@ -14,9 +14,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @author liuyiqian
- * @version 1.0
- * @description
- * @date 2018/3/1 下午3:10
  */
 @RestController
 @RequestMapping("/test")
@@ -48,7 +45,7 @@ public class TestController {
     public ModelAndView redisTest(ModelAndView modelAndView) {
         TTest tTest = testService.findById(1L);
         cacheService.saveObject(tTest.getId(), tTest);
-        modelAndView.addObject("tTest", cacheService.getObject(tTest.getId()));
+        modelAndView.addObject("test", cacheService.getObject(tTest.getId()));
         modelAndView.setViewName("testPage");
         return modelAndView;
     }
